@@ -42,7 +42,7 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-        transform.position += Vector3.forward * Time.deltaTime * speed;
+        AutoMove();
     }
 
     void OnCollisionEnter(Collision collision)
@@ -68,6 +68,11 @@ public class PlayerManager : MonoBehaviour
 
         }
         meshRenderer.material = materials[1];
+    }
+
+    void AutoMove()
+    {
+        transform.position += Vector3.forward * Time.deltaTime * speed;
     }
 
     void Jumping()
