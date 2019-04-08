@@ -20,7 +20,8 @@ public class PlayerManager : MonoBehaviour
     public float speed;
     [Space]
     public float jumpSpeed;
-    [Space]
+    
+    [Header("Set true if u want to change floats")]
     public bool editableRange;
     #endregion
 
