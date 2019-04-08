@@ -105,7 +105,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa0bd27b0c20c9479e21848b8a99c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
+  inputSO: {fileID: 11400000, guid: df4a46fd85372f245b05b36df4de7b0a, type: 2}
+  materials:
+  - {fileID: 2100000, guid: 85d2f0e76befe834e9e81787dd5cd0a3, type: 2}
+  - {fileID: 2100000, guid: 28c1600d2f66c324da21670bc0cc5faf, type: 2}
   speed: 0
+  jumpSpeed: 0
+  editableRange: 0
 --- !u!54 &2321765081856015422
 Rigidbody:
   m_ObjectHideFlags: 0

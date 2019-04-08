@@ -19,18 +19,6 @@ public class DMovablePlatform : MonoBehaviour
 
     void Update()
     {
-        //if (opponentToMove == opponent)
-        //{
-        //    if (opponent.gameObject.tag == "PDW1")
-        //    {
-        //        opponentToMove.transform.position = new Vector3(transform.position.x + distbetween, opponentToMove.transform.position.y, opponentToMove.transform.position.z);
-        //    }
-        //    else if (opponent.gameObject.tag == "PDW2")
-        //    {
-        //        opponentToMove.transform.position = new Vector3(transform.position.x - distbetween, opponentToMove.transform.position.y, opponentToMove.transform.position.z);
-        //    }
-        //}
-
         if (opponentToMove == opponent)
         {
             opponentToMove.transform.position = new Vector3(-transform.position.x, opponentToMove.transform.position.y, opponentToMove.transform.position.z);
