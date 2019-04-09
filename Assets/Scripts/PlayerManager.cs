@@ -29,7 +29,7 @@ public class PlayerManager : MonoBehaviour
     float recSpeed;
     MeshRenderer meshRenderer;
     Rigidbody m_rigidBody;
-    bool onGround;
+    bool onGround, notMove;
     #endregion
 
     void Start()
@@ -48,6 +48,62 @@ public class PlayerManager : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         onGround = true;
+
+        if (collision.gameObject.CompareTag("DoublePlat"))
+        {
+            if (type == TypeOfPlayer.PLAYER_ONE || type == TypeOfPlayer.PLAYER_TWO)
+            {
+                notMove = true;
+            }
+
+        }
+
+        if (collision.gameObject.CompareTag("MP"))
+        {
+            if (type == TypeOfPlayer.PLAYER_ONE || type == TypeOfPlayer.PLAYER_TWO)
+            {
+                notMove = true;
+            }
+        }
+    }
+
+    void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("DoublePlat")  )
+        {
+            if (type == TypeOfPlayer.PLAYER_ONE || type == TypeOfPlayer.PLAYER_TWO)
+            {
+                notMove = true;
+            }
+            
+        }
+
+        if (collision.gameObject.CompareTag("MP"))
+        {
+            if (type == TypeOfPlayer.PLAYER_ONE || type == TypeOfPlayer.PLAYER_TWO)
+            {
+                notMove = true;
+            }
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("DoublePlat"))
+        {
+            if (type == TypeOfPlayer.PLAYER_ONE || type == TypeOfPlayer.PLAYER_TWO)
+            {
+                notMove = false;
+            }
+        }
+
+        if (collision.gameObject.CompareTag("MP"))
+        {
+            if (type == TypeOfPlayer.PLAYER_ONE || type == TypeOfPlayer.PLAYER_TWO)
+            {
+                notMove = false;
+            }
+        }
     }
 
     void PlayerOneStatistics()
@@ -65,14 +121,22 @@ public class PlayerManager : MonoBehaviour
         if (!editableRange)
         {
             speed = 40f;
-
         }
         meshRenderer.material = materials[1];
     }
 
     void AutoMove()
     {
-        transform.position += Vector3.forward * Time.deltaTime * speed;
+        if (!notMove)
+        {
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            speed = recSpeed;
+        }
+        else
+        {
+            speed = 0f;
+        }
+
     }
 
     void Jumping()
