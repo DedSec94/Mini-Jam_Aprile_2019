@@ -38,6 +38,15 @@ public class PlayerManager : MonoBehaviour
         m_rigidBody = GetComponent<Rigidbody>();
         recSpeed = speed;
         StartCoroutine(FSM());
+
+        if (type == TypeOfPlayer.PLAYER_ONE)
+        {
+            m_rigidBody.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+        }
+        else if (type == TypeOfPlayer.PLAYER_TWO)
+        {
+            m_rigidBody.constraints = RigidbodyConstraints.FreezeAll;
+        }
     }
 
     void Update()
