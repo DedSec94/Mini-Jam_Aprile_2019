@@ -7,7 +7,6 @@ public class MovablePlatform : MonoBehaviour
     private Vector3 mOffset;
     private float mZCoord;
 
-
     void Start()
     {
 

@@ -50,7 +50,7 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-        AutoMove();
+        AutoMove(speed);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -62,6 +62,10 @@ public class PlayerManager : MonoBehaviour
             notMove = true;
         }
         if (collision.gameObject.tag == "MP")
+        {
+            notMove = true;
+        }
+        if (collision.gameObject.tag == "BlackWall")
         {
             notMove = true;
         }
@@ -82,6 +86,10 @@ public class PlayerManager : MonoBehaviour
         {
             notMove = true;
         }
+        if (collision.gameObject.tag == "BlackWall")
+        {
+            notMove = true;
+        }
     }
 
     void OnCollisionExit(Collision collision)
@@ -91,6 +99,10 @@ public class PlayerManager : MonoBehaviour
             notMove = false;
         }
         if (collision.gameObject.tag == "MP")
+        {
+            notMove = false;
+        }
+        if (collision.gameObject.tag == "BlackWall")
         {
             notMove = false;
         }
@@ -115,25 +127,25 @@ public class PlayerManager : MonoBehaviour
         meshRenderer.material = materials[1];
     }
 
-    void AutoMove()
+    void AutoMove(float i)
     {
         if (!notMove)
         {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
-            speed = recSpeed;
+            transform.Translate(Vector3.forward * i * Time.deltaTime);
+            i = recSpeed;
         }
         else
         {
-            speed = 0f;
+            i = 0f;
         }
 
     }
 
-    void Jumping()
+    void Jumping(float i)
     {
         if (Input.GetKeyDown(inputSO.jumpKey) && onGround)
         {
-            m_rigidBody.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
+            m_rigidBody.AddForce(Vector3.up * i, ForceMode.Impulse);
             onGround = false;
         }
     }
@@ -146,7 +158,7 @@ public class PlayerManager : MonoBehaviour
             {
                 case TypeOfPlayer.PLAYER_ONE:
                     PlayerOneStatistics();
-                    Jumping();
+                    Jumping(jumpSpeed);
                     break;
                 case TypeOfPlayer.PLAYER_TWO:
                     PlayerTwoStatistics();
