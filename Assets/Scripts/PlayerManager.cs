@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public enum TypeOfPlayer
@@ -20,7 +21,6 @@ public class PlayerManager : MonoBehaviour
     public float speed;
     [Space]
     public float jumpSpeed;
-    
     [Header("Set true if u want to change floats")]
     public bool editableRange;
     #endregion
@@ -38,7 +38,6 @@ public class PlayerManager : MonoBehaviour
         m_rigidBody = GetComponent<Rigidbody>();
         recSpeed = speed;
         StartCoroutine(FSM());
-
         if (type == TypeOfPlayer.PLAYER_ONE)
         {
             m_rigidBody.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
@@ -58,60 +57,42 @@ public class PlayerManager : MonoBehaviour
     {
         onGround = true;
 
-        if (collision.gameObject.CompareTag("DoublePlat"))
+        if (collision.gameObject.tag == "DoublePlat")
         {
-            if (type == TypeOfPlayer.PLAYER_ONE || type == TypeOfPlayer.PLAYER_TWO)
-            {
-                notMove = true;
-            }
-
+            notMove = true;
+        }
+        if (collision.gameObject.tag == "MP")
+        {
+            notMove = true;
         }
 
-        if (collision.gameObject.CompareTag("MP"))
+        if (collision.gameObject.tag == "Trap")
         {
-            if (type == TypeOfPlayer.PLAYER_ONE || type == TypeOfPlayer.PLAYER_TWO)
-            {
-                notMove = true;
-            }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
     void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.CompareTag("DoublePlat")  )
+        if (collision.gameObject.tag == "DoublePlat")
         {
-            if (type == TypeOfPlayer.PLAYER_ONE || type == TypeOfPlayer.PLAYER_TWO)
-            {
-                notMove = true;
-            }
-            
+            notMove = true;
         }
-
-        if (collision.gameObject.CompareTag("MP"))
+        if (collision.gameObject.tag == "MP")
         {
-            if (type == TypeOfPlayer.PLAYER_ONE || type == TypeOfPlayer.PLAYER_TWO)
-            {
-                notMove = true;
-            }
+            notMove = true;
         }
     }
 
     void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.CompareTag("DoublePlat"))
+        if (collision.gameObject.tag == "DoublePlat")
         {
-            if (type == TypeOfPlayer.PLAYER_ONE || type == TypeOfPlayer.PLAYER_TWO)
-            {
-                notMove = false;
-            }
+            notMove = false;
         }
-
-        if (collision.gameObject.CompareTag("MP"))
+        if (collision.gameObject.tag == "MP")
         {
-            if (type == TypeOfPlayer.PLAYER_ONE || type == TypeOfPlayer.PLAYER_TWO)
-            {
-                notMove = false;
-            }
+            notMove = false;
         }
     }
 

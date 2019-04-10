@@ -112,6 +112,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28c1600d2f66c324da21670bc0cc5faf, type: 2}
   speed: 0
   jumpSpeed: 0
+  stopperTags:
+  - DoublePlat
+  - MP
+  restarterTags:
+  - Trap
   editableRange: 0
 --- !u!54 &2321765081856015422
 Rigidbody:
