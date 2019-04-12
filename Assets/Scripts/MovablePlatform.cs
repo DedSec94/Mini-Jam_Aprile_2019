@@ -7,6 +7,7 @@ public class MovablePlatform : MonoBehaviour
     private Vector3 mOffset;
     private float mZCoord;
     private float zPosition;
+    public float xPosition;
     void Start()
     {
         zPosition = transform.position.z;
@@ -14,10 +15,10 @@ public class MovablePlatform : MonoBehaviour
     void Update()
     {
         //lock x
-        if (transform.position.x < -5)
-            transform.position = new Vector3(-5, transform.position.y, transform.position.z);
-        if (transform.position.x > 5)
-            transform.position = new Vector3(5, transform.position.y, transform.position.z);
+        if (transform.position.x < -xPosition)
+            transform.position = new Vector3(-xPosition, transform.position.y, transform.position.z);
+        if (transform.position.x > xPosition)
+            transform.position = new Vector3(xPosition, transform.position.y, transform.position.z);
         //lock z
         if (transform.position.z < zPosition)
             transform.position = new Vector3(transform.position.x, transform.position.y, zPosition);
