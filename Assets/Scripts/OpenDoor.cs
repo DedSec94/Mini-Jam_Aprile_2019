@@ -6,11 +6,28 @@ public class OpenDoor : MonoBehaviour
 {
     public Transform door;
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
+    public ParticleSystem smoke;
+    private AudioSource audioSource;
+    public AudioClip button;
+
+        void Awake()
         {
-            door.GetChild(2).transform.position = new Vector3(door.GetChild(2).transform.position.x, -1, door.GetChild(2).transform.position.z);
+            audioSource = GetComponent<AudioSource>();
+            smoke = GetComponentInChildren<ParticleSystem>();
         }
-    }
+
+        void OnTriggerEnter(Collider other)
+
+        {
+
+        if (other.gameObject.tag == "Player")
+
+             {
+                door.GetChild(2).transform.position = new Vector3(door.GetChild(2).transform.position.x, -1, door.GetChild(2).transform.position.z);
+
+                smoke.Play();
+                audioSource.Play();
+            
+             }
+        }
 }
