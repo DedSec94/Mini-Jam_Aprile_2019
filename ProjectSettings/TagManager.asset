@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - DoublePlat
+  - BlackWall
+  - MP
+  - Trap
+  - ElectricFieldA
+  - ElectricFieldB
   layers:
   - Default
   - TransparentFX
