@@ -112,7 +112,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (!editableRange)
         {
-            speed = 50f;
+            speed = 8f;
             jumpSpeed = 10f;
         }
         meshRenderer.material = materials[0];
@@ -122,7 +122,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (!editableRange)
         {
-            speed = 40f;
+            speed = 5f;
         }
         meshRenderer.material = materials[1];
     }
