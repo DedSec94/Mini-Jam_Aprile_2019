@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 0}
   smoke: {fileID: 0}
+  button: {fileID: 0}
 --- !u!82 &2360396064027152184
 AudioSource:
   m_ObjectHideFlags: 0
@@ -135,7 +136,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b6b2794da2e021f4693e31101861ebd2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
