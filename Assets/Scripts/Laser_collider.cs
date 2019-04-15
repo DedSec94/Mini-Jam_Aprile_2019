@@ -5,7 +5,7 @@ using UnityEngine;
 public class Laser_collider : MonoBehaviour
 {
     private AudioSource audioSource;
-    private AudioClip electric;
+    public AudioClip electric;
 
     void Awake ()
     {
@@ -17,7 +17,7 @@ public class Laser_collider : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            audioSource.Play();
+            audioSource.PlayOneShot(electric);
         }
     }
 }

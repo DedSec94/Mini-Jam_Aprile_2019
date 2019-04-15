@@ -10,7 +10,7 @@ public class ItsATrap : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip plate;
 
-    private void Awake()
+    private void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
@@ -21,8 +21,7 @@ public class ItsATrap : MonoBehaviour
         {
             m_trap.transform.position = new Vector3(m_trap.transform.position.x, m_trap.transform.position.y - distance, m_trap.transform.position.z);
             m_trap.GetComponent<BoxCollider>().isTrigger = true;
+            audioSource.PlayOneShot(audioSource.clip);
         }
-
-        audioSource.Play();
     }
 }

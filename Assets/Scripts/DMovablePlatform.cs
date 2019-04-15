@@ -12,7 +12,6 @@ public class DMovablePlatform : MonoBehaviour
     {
         opponentToMove = null;
     }
-
     void Update()
     {
         if (opponentToMove == opponent)
