@@ -131,7 +131,8 @@ public class PlayerManager : MonoBehaviour
     {
         if (!notMove)
         {
-            transform.Translate(Vector3.forward * i * Time.deltaTime);
+            //transform.Translate(Vector3.forward * i * Time.deltaTime);
+            transform.position += new Vector3(0, 0,i * Time.deltaTime);
             i = recSpeed;
         }
         else
