@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public enum TypeOfPlayer
+/*public enum TypeOfPlayer
 {
     PLAYER_ONE,
     PLAYER_TWO
-}
+}*/
 
-public class PlayerManager : MonoBehaviour
+public class ChasingSawManager : MonoBehaviour
 {
     #region PUBLIC
     public TypeOfPlayer type;
@@ -23,8 +23,6 @@ public class PlayerManager : MonoBehaviour
     public float jumpSpeed;
     [Header("Set true if u want to change floats")]
     public bool editableRange;
-    [Space]
-    public ParticleSystem dust;
     #endregion
 
     #region PRIVATE
@@ -38,9 +36,8 @@ public class PlayerManager : MonoBehaviour
     {
         meshRenderer = GetComponent<MeshRenderer>();
         m_rigidBody = GetComponent<Rigidbody>();
-        dust = GetComponentInChildren<ParticleSystem>();
         recSpeed = speed;
-        StartCoroutine(FSM());
+        // StartCoroutine(FSM());
         if (type == TypeOfPlayer.PLAYER_ONE)
         {
             m_rigidBody.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
@@ -63,17 +60,14 @@ public class PlayerManager : MonoBehaviour
         if (collision.gameObject.tag == "DoublePlat")
         {
             notMove = true;
-            dust.Play();
         }
         if (collision.gameObject.tag == "MP")
         {
             notMove = true;
-            dust.Play();
         }
         if (collision.gameObject.tag == "BlackWall")
         {
             notMove = true;
-            dust.Play();
         }
 
         if (collision.gameObject.tag == "Trap")
@@ -121,7 +115,7 @@ public class PlayerManager : MonoBehaviour
             speed = 8f;
             jumpSpeed = 10f;
         }
-        meshRenderer.material = materials[0];
+        // meshRenderer.material = materials[0];
     }
 
     void PlayerTwoStatistics()
@@ -130,7 +124,7 @@ public class PlayerManager : MonoBehaviour
         {
             speed = 5f;
         }
-        meshRenderer.material = materials[1];
+        // meshRenderer.material = materials[1];
     }
 
     void AutoMove(float i)
@@ -138,7 +132,7 @@ public class PlayerManager : MonoBehaviour
         if (!notMove)
         {
             //transform.Translate(Vector3.forward * i * Time.deltaTime);
-            transform.position += new Vector3(0, 0,i * Time.deltaTime);
+            transform.position += new Vector3(0, 0, i * Time.deltaTime);
             i = recSpeed;
         }
         else
@@ -157,11 +151,11 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    IEnumerator FSM()
+   /*  IEnumerator FSM()
     {
-        while(true)
+        while (true)
         {
-            switch(type)
+            switch (type)
             {
                 case TypeOfPlayer.PLAYER_ONE:
                     PlayerOneStatistics();
@@ -173,5 +167,5 @@ public class PlayerManager : MonoBehaviour
             }
             yield return null;
         }
-    }
+    } */ 
 }
