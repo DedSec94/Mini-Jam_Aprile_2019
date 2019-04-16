@@ -25,13 +25,15 @@ public class PlayerManager : MonoBehaviour
     public bool editableRange;
     [Space]
     public ParticleSystem dust;
+    [Space]
+    public bool notMove;
     #endregion
 
     #region PRIVATE
     float recSpeed;
     MeshRenderer meshRenderer;
     Rigidbody m_rigidBody;
-    bool onGround, notMove;
+    bool onGround; 
     #endregion
 
     void Start()
