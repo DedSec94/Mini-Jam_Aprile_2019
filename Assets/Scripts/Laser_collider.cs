@@ -7,11 +7,10 @@ public class Laser_collider : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip electric;
 
-    void Awake ()
+    void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
-
     
     void OnTriggerEnter (Collider other)
     {

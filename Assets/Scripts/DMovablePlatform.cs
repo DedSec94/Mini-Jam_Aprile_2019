@@ -8,7 +8,7 @@ public class DMovablePlatform : MonoBehaviour
     public GameObject opponent;
     public GameObject opponentToMove;
 
-    void Start()
+    void Awake ()
     {
         opponentToMove = null;
     }
