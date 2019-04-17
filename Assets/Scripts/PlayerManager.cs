@@ -34,7 +34,6 @@ public class PlayerManager : MonoBehaviour
     MeshRenderer meshRenderer;
     Rigidbody m_rigidBody;
     bool onGround;
-    MultipleTargetCamera m_Camera;
     #endregion
 
     void Start()
@@ -42,7 +41,6 @@ public class PlayerManager : MonoBehaviour
         meshRenderer = GetComponent<MeshRenderer>();
         m_rigidBody = GetComponent<Rigidbody>();
         dust = GetComponentInChildren<ParticleSystem>();
-        m_Camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<MultipleTargetCamera>();
         recSpeed = speed;
 
         StartCoroutine(FSM());
@@ -75,7 +73,6 @@ public class PlayerManager : MonoBehaviour
         {
             notMove = true;
             dust.Play();
-            m_Camera.Shake();
         }
         if (collision.gameObject.tag == "BlackWall")
         {

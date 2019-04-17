@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using EZCameraShake;
 
 [RequireComponent(typeof(Camera))]
 public class MultipleTargetCamera : MonoBehaviour
@@ -35,6 +34,11 @@ public class MultipleTargetCamera : MonoBehaviour
         cam = GetComponent<Camera>();
     }
 
+    void Update()
+    {
+        Shake();
+    }
+
     void LateUpdate()
     {
         if (targets.Count == 0)
@@ -44,11 +48,6 @@ public class MultipleTargetCamera : MonoBehaviour
 
         Zoom();
         Move();
-    }
-
-    public void Shake()
-    {
-        CameraShaker.Instance.ShakeOnce(magnitude, roughness, fadeInTime, fadeOutTime);
     }
 
     void Zoom()
