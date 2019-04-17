@@ -35,7 +35,7 @@ public class PlayerManager : MonoBehaviour
     float recSpeed;
     MeshRenderer meshRenderer;
     Rigidbody m_rigidBody;
-    bool onGround; 
+    bool onGround;
     #endregion
 
     void Start()
@@ -44,7 +44,9 @@ public class PlayerManager : MonoBehaviour
         m_rigidBody = GetComponent<Rigidbody>();
         dust = GetComponentInChildren<ParticleSystem>();
         recSpeed = speed;
+
         StartCoroutine(FSM());
+
         if (type == TypeOfPlayer.PLAYER_ONE)
         {
             m_rigidBody.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;

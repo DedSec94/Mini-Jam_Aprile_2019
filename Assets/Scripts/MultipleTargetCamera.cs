@@ -15,6 +15,12 @@ public class MultipleTargetCamera : MonoBehaviour
     public float minZoom;
     public float maxZoom;
     public float zoomLimiter;
+    [Header("Camera Shake Values")]
+    [Space]
+    public float magnitude;
+    public float roughness;
+    public float fadeInTime;
+    public float fadeOutTime;
     #endregion
 
     #region PRIVATE
@@ -26,6 +32,11 @@ public class MultipleTargetCamera : MonoBehaviour
     void Start()
     {
         cam = GetComponent<Camera>();
+    }
+
+    void Update()
+    {
+        Shake();
     }
 
     void LateUpdate()
