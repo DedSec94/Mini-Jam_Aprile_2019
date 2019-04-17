@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 [RequireComponent(typeof(Camera))]
 public class MultipleTargetCamera : MonoBehaviour
@@ -15,6 +16,12 @@ public class MultipleTargetCamera : MonoBehaviour
     public float minZoom;
     public float maxZoom;
     public float zoomLimiter;
+    [Header("Camera Shake Values")]
+    [Space]
+    public float magnitude;
+    public float roughness;
+    public float fadeInTime;
+    public float fadeOutTime;
     #endregion
 
     #region PRIVATE
@@ -37,6 +44,11 @@ public class MultipleTargetCamera : MonoBehaviour
 
         Zoom();
         Move();
+    }
+
+    public void Shake()
+    {
+        CameraShaker.Instance.ShakeOnce(magnitude, roughness, fadeInTime, fadeOutTime);
     }
 
     void Zoom()
