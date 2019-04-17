@@ -70,19 +70,22 @@ public class PlayerManager : MonoBehaviour
 
         if (collision.gameObject.tag == "DoublePlat")
         {
-            StartCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
+            //StartCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
+            StartCoroutine(cameraShake.Shake(.15f, .4f));
             notMove = true;
             dust.Play();
         }
         if (collision.gameObject.tag == "MP")
         {
-            StartCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
+            //StartCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
+            StartCoroutine(cameraShake.Shake(.15f, .4f));
             notMove = true;
             dust.Play();
         }
         if (collision.gameObject.tag == "BlackWall")
         {
-            StartCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
+            //StartCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
+            StartCoroutine(cameraShake.Shake(.15f, .4f));
             notMove = true;
             dust.Play();
         }
@@ -113,18 +116,18 @@ public class PlayerManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "DoublePlat")
         {
-            StopCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
+            //StopCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
             notMove = false;
         }
         if (collision.gameObject.tag == "MP")
         {
-            StopCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
+            //StopCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
 
             notMove = false;
         }
         if (collision.gameObject.tag == "BlackWall")
         {
-            StopCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
+            //StopCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
             notMove = false;
         }
     }

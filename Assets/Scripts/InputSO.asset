@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a731c465a9cf85044b62f910424a11c4, type: 3}
   m_Name: InputSO
   m_EditorClassIdentifier: 
-  jumpKey: 32
+  jumpKey: 0
