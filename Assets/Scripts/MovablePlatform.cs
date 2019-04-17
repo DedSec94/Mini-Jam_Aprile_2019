@@ -7,7 +7,9 @@ public class MovablePlatform : MonoBehaviour
     private Vector3 mOffset;
     private float mZCoord;
     private float zPosition;
-    public float xPosition;
+    [Space]
+    public float minX, maxX;
+
     void Start()
     {
         zPosition = transform.position.z;
@@ -15,10 +17,7 @@ public class MovablePlatform : MonoBehaviour
     void Update()
     {
         //lock x
-        //if (transform.position.x < -xPosition)
-        //    transform.position = new Vector3(-xPosition, transform.position.y, transform.position.z);
-        //if (transform.position.x > xPosition)
-        //    transform.position = new Vector3(xPosition, transform.position.y, transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -minX, maxX), transform.position.y, transform.position.z);
         //lock z
         if (transform.position.z < zPosition)
             transform.position = new Vector3(transform.position.x, transform.position.y, zPosition);
@@ -26,12 +25,10 @@ public class MovablePlatform : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, zPosition);
     }
 
-
     void OnMouseDown()
     {
         mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
         mOffset = gameObject.transform.position - GetMouseWorldPos();
-
     }
     private Vector3 GetMouseWorldPos()
     {
@@ -39,7 +36,6 @@ public class MovablePlatform : MonoBehaviour
         mousePoint.z = mZCoord;
         return Camera.main.ScreenToWorldPoint(mousePoint);
     }
-
 
     void OnMouseDrag()
     {

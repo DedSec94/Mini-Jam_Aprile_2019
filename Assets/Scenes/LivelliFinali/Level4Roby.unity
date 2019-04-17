@@ -328,6 +328,21 @@ PrefabInstance:
       propertyPath: opponent
       value: 
       objectReference: {fileID: 667311986}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: minX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: maxX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8541864990396488418, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: opponent
+      value: 
+      objectReference: {fileID: 667311986}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2460059d2bf65149a74cc7f49410a31, type: 3}
 --- !u!1 &270125148 stripped
@@ -642,6 +657,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5655941589713588757, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: opponent
+      value: 
+      objectReference: {fileID: 270125148}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: minX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: maxX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8541864990396488418, guid: c2460059d2bf65149a74cc7f49410a31,
         type: 3}
       propertyPath: opponent
       value: 
@@ -1172,6 +1202,21 @@ PrefabInstance:
       propertyPath: opponent
       value: 
       objectReference: {fileID: 1551475957}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: minX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: maxX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8541864990396488418, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: opponent
+      value: 
+      objectReference: {fileID: 1551475957}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2460059d2bf65149a74cc7f49410a31, type: 3}
 --- !u!1 &1146515510 stripped
@@ -1411,6 +1456,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5655941589713588757, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: opponent
+      value: 
+      objectReference: {fileID: 1146515510}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: minX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: maxX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8541864990396488418, guid: c2460059d2bf65149a74cc7f49410a31,
         type: 3}
       propertyPath: opponent
       value: 

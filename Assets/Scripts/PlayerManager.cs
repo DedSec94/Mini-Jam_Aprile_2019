@@ -44,6 +44,8 @@ public class PlayerManager : MonoBehaviour
         m_rigidBody = GetComponent<Rigidbody>();
         dust = GetComponentInChildren<ParticleSystem>();
         recSpeed = speed;
+        cameraShake = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>();
+
 
         StartCoroutine(FSM());
 
@@ -68,19 +70,19 @@ public class PlayerManager : MonoBehaviour
 
         if (collision.gameObject.tag == "DoublePlat")
         {
-            StartCoroutine(cameraShake.Shake(.15f, 4f));
+            StartCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
             notMove = true;
             dust.Play();
         }
         if (collision.gameObject.tag == "MP")
         {
-            StartCoroutine(cameraShake.Shake(.15f,4f));
+            StartCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
             notMove = true;
             dust.Play();
         }
         if (collision.gameObject.tag == "BlackWall")
         {
-            StartCoroutine(cameraShake.Shake(.15f, 4f));
+            StartCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
             notMove = true;
             dust.Play();
         }
@@ -111,14 +113,18 @@ public class PlayerManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "DoublePlat")
         {
+            StopCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
             notMove = false;
         }
         if (collision.gameObject.tag == "MP")
         {
+            StopCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
+
             notMove = false;
         }
         if (collision.gameObject.tag == "BlackWall")
         {
+            StopCoroutine(cameraShake.Shake(cameraShake.gameObject.GetComponent<MultipleTargetCamera>().duration, cameraShake.gameObject.GetComponent<MultipleTargetCamera>().magnitude));
             notMove = false;
         }
     }
@@ -146,7 +152,6 @@ public class PlayerManager : MonoBehaviour
     {
         if (!notMove)
         {
-            //transform.Translate(Vector3.forward * i * Time.deltaTime);
             transform.position += new Vector3(0, 0,i * Time.deltaTime);
             i = recSpeed;
         }

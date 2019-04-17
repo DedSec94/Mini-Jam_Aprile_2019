@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1161027043585606454}
   - component: {fileID: 1161027043585606455}
   - component: {fileID: 1161027043585606408}
+  - component: {fileID: 3689529553475624689}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -104,6 +105,16 @@ MonoBehaviour:
   maxZoom: 60
   zoomLimiter: 179
   magnitude: 4
-  roughness: 4
-  fadeInTime: 0.1
-  fadeOutTime: 1
+  duration: 0.15
+--- !u!114 &3689529553475624689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161027043585606452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9ca673f6bc29f48b881b059f6a19ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

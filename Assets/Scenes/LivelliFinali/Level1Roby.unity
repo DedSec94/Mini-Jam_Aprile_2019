@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -196,6 +196,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16eb8b70ba5ad9840b07e9c5f7ee0e75, type: 3}
+--- !u!1 &526636774 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3750971301559093968, guid: c2460059d2bf65149a74cc7f49410a31,
+    type: 3}
+  m_PrefabInstance: {fileID: 1284228985}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &722098322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -788,6 +794,21 @@ PrefabInstance:
       propertyPath: opponent
       value: 
       objectReference: {fileID: 1307359308}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: maxX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: minX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8541864990396488418, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: opponent
+      value: 
+      objectReference: {fileID: 1307359308}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2460059d2bf65149a74cc7f49410a31, type: 3}
 --- !u!1001 &1307359307
@@ -862,6 +883,21 @@ PrefabInstance:
       propertyPath: opponent
       value: 
       objectReference: {fileID: 1307359308}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: minX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: maxX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8541864990396488418, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: opponent
+      value: 
+      objectReference: {fileID: 526636774}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2460059d2bf65149a74cc7f49410a31, type: 3}
 --- !u!1 &1307359308 stripped
@@ -1316,8 +1352,29 @@ PrefabInstance:
       propertyPath: opponent
       value: 
       objectReference: {fileID: 2091097865}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: maxX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: minX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8541864990396488418, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: opponent
+      value: 
+      objectReference: {fileID: 2091097865}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2460059d2bf65149a74cc7f49410a31, type: 3}
+--- !u!1 &2083783376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3750971301559093968, guid: c2460059d2bf65149a74cc7f49410a31,
+    type: 3}
+  m_PrefabInstance: {fileID: 1837136953}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2091097864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1390,6 +1447,21 @@ PrefabInstance:
       propertyPath: opponent
       value: 
       objectReference: {fileID: 2091097865}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: minX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 801498944076903036, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: maxX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8541864990396488418, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: opponent
+      value: 
+      objectReference: {fileID: 2083783376}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2460059d2bf65149a74cc7f49410a31, type: 3}
 --- !u!1 &2091097865 stripped
