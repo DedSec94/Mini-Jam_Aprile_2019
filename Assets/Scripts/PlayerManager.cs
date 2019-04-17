@@ -27,6 +27,8 @@ public class PlayerManager : MonoBehaviour
     public ParticleSystem dust;
     [Space]
     public bool notMove;
+    [Space]
+    public CameraShake cameraShake;
     #endregion
 
     #region PRIVATE
@@ -64,16 +66,19 @@ public class PlayerManager : MonoBehaviour
 
         if (collision.gameObject.tag == "DoublePlat")
         {
+            StartCoroutine(cameraShake.Shake(.15f, 4f));
             notMove = true;
             dust.Play();
         }
         if (collision.gameObject.tag == "MP")
         {
+            StartCoroutine(cameraShake.Shake(.15f,4f));
             notMove = true;
             dust.Play();
         }
         if (collision.gameObject.tag == "BlackWall")
         {
+            StartCoroutine(cameraShake.Shake(.15f, 4f));
             notMove = true;
             dust.Play();
         }
