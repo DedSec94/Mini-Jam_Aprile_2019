@@ -158,7 +158,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (!editableRange)
         {
-            speed = 5f;
+            speed = 4f;
         }
         meshRenderer.material = materials[1];
     }
