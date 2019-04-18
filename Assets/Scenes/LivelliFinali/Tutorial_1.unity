@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -452,6 +452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chasing Saws
       objectReference: {fileID: 0}
+    - target: {fileID: 1477539130, guid: 0b518bfefdc11224192f6f07ca5ac588, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1477539131, guid: 0b518bfefdc11224192f6f07ca5ac588, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
@@ -496,11 +500,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6209747704103857615, guid: 0b518bfefdc11224192f6f07ca5ac588,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 286730012308062812, guid: 0b518bfefdc11224192f6f07ca5ac588,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -515,6 +514,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209747704103857615, guid: 0b518bfefdc11224192f6f07ca5ac588,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1916004186, guid: 0b518bfefdc11224192f6f07ca5ac588, type: 3}
@@ -590,11 +594,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1681609667182197335, guid: 4f7eb2542f5042a428dac41ebbc03941,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bcf91bee723bc8b4ab0f6e681f9956cd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f7eb2542f5042a428dac41ebbc03941, type: 3}
 --- !u!4 &380112503 stripped
@@ -715,13 +714,13 @@ PrefabInstance:
       propertyPath: cameraShake
       value: 
       objectReference: {fileID: 2056365794}
+    - target: {fileID: 4060483406456190, guid: 3022d11ab3a029d4ca7e6c73be236c44, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2321765081856015422, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
       propertyPath: m_Constraints
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4060483406456190, guid: 3022d11ab3a029d4ca7e6c73be236c44, type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1295,11 +1294,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1681609667182197335, guid: 4f7eb2542f5042a428dac41ebbc03941,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bcf91bee723bc8b4ab0f6e681f9956cd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f7eb2542f5042a428dac41ebbc03941, type: 3}
 --- !u!4 &816721749 stripped
@@ -1375,11 +1369,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2315720775240684266, guid: c2460059d2bf65149a74cc7f49410a31,
-        type: 3}
-      propertyPath: xPosition
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5655941589713588757, guid: c2460059d2bf65149a74cc7f49410a31,
         type: 3}
       propertyPath: opponent
@@ -1390,6 +1379,11 @@ PrefabInstance:
       propertyPath: opponent
       value: 
       objectReference: {fileID: 1885609786}
+    - target: {fileID: 2315720775240684266, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: xPosition
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2460059d2bf65149a74cc7f49410a31, type: 3}
 --- !u!1001 &900032320
@@ -1459,11 +1453,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2315720775240684266, guid: c2460059d2bf65149a74cc7f49410a31,
-        type: 3}
-      propertyPath: xPosition
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5655941589713588757, guid: c2460059d2bf65149a74cc7f49410a31,
         type: 3}
       propertyPath: opponent
@@ -1474,6 +1463,11 @@ PrefabInstance:
       propertyPath: opponent
       value: 
       objectReference: {fileID: 1324349411}
+    - target: {fileID: 2315720775240684266, guid: c2460059d2bf65149a74cc7f49410a31,
+        type: 3}
+      propertyPath: xPosition
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2460059d2bf65149a74cc7f49410a31, type: 3}
 --- !u!1001 &907810657
@@ -2612,7 +2606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1635594164
 Light:
   m_ObjectHideFlags: 0
@@ -3397,8 +3391,8 @@ MonoBehaviour:
   minZoom: 10
   maxZoom: 60
   zoomLimiter: 179
-  magnitude: 0
-  duration: 0
+  magnitude: 20
+  duration: 5
 --- !u!114 &2056365794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3496,6 +3490,10 @@ PrefabInstance:
     - target: {fileID: 1477539130, guid: 0b518bfefdc11224192f6f07ca5ac588, type: 3}
       propertyPath: m_Name
       value: Chasing Saws_p1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477539130, guid: 0b518bfefdc11224192f6f07ca5ac588, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1477539131, guid: 0b518bfefdc11224192f6f07ca5ac588, type: 3}
       propertyPath: m_LocalPosition.x

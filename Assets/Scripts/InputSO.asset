@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: InputSO
   m_EditorClassIdentifier: 
   jumpKey: 0
+  exitKey: 27

@@ -62,6 +62,11 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {
         AutoMove(speed);
+
+        if (Input.GetKeyDown(inputSO.exitKey))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     void OnCollisionEnter(Collision collision)
