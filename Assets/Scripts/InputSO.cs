@@ -6,4 +6,5 @@ using UnityEngine;
 public class InputSO : ScriptableObject
 {
     public KeyCode jumpKey;
+    public KeyCode exitKey;
 }
