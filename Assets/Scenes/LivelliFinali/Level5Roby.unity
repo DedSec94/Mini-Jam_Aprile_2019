@@ -1034,6 +1034,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 826228517824005057, guid: 0b4ce1456bdb63f4c86f85546c86bda9,
+        type: 3}
+      propertyPath: opponent
+      value: 
+      objectReference: {fileID: 1146197549}
     - target: {fileID: 8195399904744786168, guid: 0b4ce1456bdb63f4c86f85546c86bda9,
         type: 3}
       propertyPath: minX
@@ -1046,6 +1051,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b4ce1456bdb63f4c86f85546c86bda9, type: 3}
+--- !u!1 &949210811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6093511377088392458, guid: 0b4ce1456bdb63f4c86f85546c86bda9,
+    type: 3}
+  m_PrefabInstance: {fileID: 949210810}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1022829087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1287,6 +1298,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 826228517824005057, guid: 0b4ce1456bdb63f4c86f85546c86bda9,
+        type: 3}
+      propertyPath: opponent
+      value: 
+      objectReference: {fileID: 949210811}
     - target: {fileID: 8195399904744786168, guid: 0b4ce1456bdb63f4c86f85546c86bda9,
         type: 3}
       propertyPath: minX
@@ -1299,6 +1315,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b4ce1456bdb63f4c86f85546c86bda9, type: 3}
+--- !u!1 &1146197549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6093511377088392458, guid: 0b4ce1456bdb63f4c86f85546c86bda9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1146197548}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1191224747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1543,7 +1565,7 @@ PrefabInstance:
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
       propertyPath: editableRange
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
@@ -1855,7 +1877,7 @@ PrefabInstance:
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
       propertyPath: editableRange
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3022d11ab3a029d4ca7e6c73be236c44, type: 3}

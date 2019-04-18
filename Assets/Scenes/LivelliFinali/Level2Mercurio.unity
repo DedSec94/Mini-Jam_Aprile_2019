@@ -1094,7 +1094,7 @@ PrefabInstance:
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
       propertyPath: editableRange
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
@@ -1716,7 +1716,7 @@ PrefabInstance:
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
       propertyPath: editableRange
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3022d11ab3a029d4ca7e6c73be236c44, type: 3}
@@ -1745,7 +1745,7 @@ PrefabInstance:
     - target: {fileID: 5985029816759494182, guid: 880d9b728e0f9044282dce0cc43f11e5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.78
+      value: 26.61
       objectReference: {fileID: 0}
     - target: {fileID: 5985029816759494182, guid: 880d9b728e0f9044282dce0cc43f11e5,
         type: 3}

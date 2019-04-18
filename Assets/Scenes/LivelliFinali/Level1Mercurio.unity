@@ -856,7 +856,7 @@ PrefabInstance:
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
       propertyPath: editableRange
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
@@ -942,6 +942,11 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 118996052}
+    - target: {fileID: 2360396064027152184, guid: 195500addee599e4fbd811cf47e6609c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6153257692270714d81648ba2172a331, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195500addee599e4fbd811cf47e6609c, type: 3}
 --- !u!1001 &1570466862
@@ -1178,7 +1183,7 @@ PrefabInstance:
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
       propertyPath: editableRange
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
