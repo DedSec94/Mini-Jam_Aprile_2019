@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 432086}
   - component: {fileID: 3332088}
   - component: {fileID: 2332088}
+  - component: {fileID: 6716909896263624271}
   m_Layer: 0
   m_Name: GreatAxe
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,6 +78,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6716909896263624271
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: b9cb6abd86b0af442b58106bea0f3ebe, type: 3}
 --- !u!1 &132088
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,6 +179,9 @@ GameObject:
   m_Component:
   - component: {fileID: 432090}
   - component: {fileID: 11187624}
+  - component: {fileID: 12816163}
+  - component: {fileID: 1509480455834558490}
+  - component: {fileID: 8610846084265923375}
   m_Layer: 0
   m_Name: Pf_GreatAxeTrap
   m_TagString: Untagged
@@ -203,3 +221,41 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &12816163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132090}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb1a3807d0a6cd4badb60964a567c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1509480455834558490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e76d49949f312404ab351b4a5cd2310f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  altro: {fileID: 0}
+--- !u!65 &8610846084265923375
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 6, z: 1}
+  m_Center: {x: 0, y: -1.5, z: 0}
