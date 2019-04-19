@@ -180,7 +180,6 @@ GameObject:
   - component: {fileID: 432090}
   - component: {fileID: 11187624}
   - component: {fileID: 12816163}
-  - component: {fileID: 1509480455834558490}
   - component: {fileID: 8610846084265923375}
   m_Layer: 0
   m_Name: Pf_GreatAxeTrap
@@ -233,19 +232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb1a3807d0a6cd4badb60964a567c1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1509480455834558490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e76d49949f312404ab351b4a5cd2310f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  altro: {fileID: 0}
 --- !u!65 &8610846084265923375
 BoxCollider:
   m_ObjectHideFlags: 0
