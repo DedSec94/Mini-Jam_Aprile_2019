@@ -36,7 +36,7 @@ public class MultipleTargetCamera : MonoBehaviour
 
     void Update()
     {
-        cameraShake.Shake(duration, magnitude);
+        //cameraShake.Shake(duration, magnitude);
     }
 
     void LateUpdate()

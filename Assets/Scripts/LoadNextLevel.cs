@@ -19,7 +19,7 @@ public class LoadNextLevel : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-        if (SceneManager.GetActiveScene().buildIndex == 8 && i >= 2)
+        if (SceneManager.GetActiveScene().buildIndex == 12 && i >= 2)
         {
             SceneManager.LoadScene(0);
         }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -579,7 +579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &394336786
 Transform:
   m_ObjectHideFlags: 0
@@ -645,7 +645,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &413243535
 Transform:
   m_ObjectHideFlags: 0
@@ -784,7 +784,7 @@ PrefabInstance:
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
       propertyPath: speed
-      value: 0.1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
@@ -932,19 +932,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 932897284}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &702426485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702426484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e76d49949f312404ab351b4a5cd2310f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  altro: {fileID: 824784866}
 --- !u!1 &817920143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,19 +1045,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1134230355}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &824784867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 824784866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e76d49949f312404ab351b4a5cd2310f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  altro: {fileID: 702426484}
 --- !u!1001 &907810657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1165,12 +1139,12 @@ PrefabInstance:
     - target: {fileID: 2113881616768285936, guid: 72ea7a7d6358df540a94c0c3ba522c5c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.95
+      value: 4.7299995
       objectReference: {fileID: 0}
     - target: {fileID: 2113881616768285936, guid: 72ea7a7d6358df540a94c0c3ba522c5c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.81
+      value: 1.91
       objectReference: {fileID: 0}
     - target: {fileID: 2113881616768285936, guid: 72ea7a7d6358df540a94c0c3ba522c5c,
         type: 3}
@@ -1217,6 +1191,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3806344313250821209, guid: 72ea7a7d6358df540a94c0c3ba522c5c,
+        type: 3}
+      propertyPath: altro
+      value: 
+      objectReference: {fileID: 824784866}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ea7a7d6358df540a94c0c3ba522c5c, type: 3}
 --- !u!1001 &1134230355
@@ -1234,12 +1213,12 @@ PrefabInstance:
     - target: {fileID: 2113881616768285936, guid: 72ea7a7d6358df540a94c0c3ba522c5c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.19
+      value: 4.97
       objectReference: {fileID: 0}
     - target: {fileID: 2113881616768285936, guid: 72ea7a7d6358df540a94c0c3ba522c5c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 2113881616768285936, guid: 72ea7a7d6358df540a94c0c3ba522c5c,
         type: 3}
@@ -1286,6 +1265,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3806344313250821209, guid: 72ea7a7d6358df540a94c0c3ba522c5c,
+        type: 3}
+      propertyPath: altro
+      value: 
+      objectReference: {fileID: 702426484}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ea7a7d6358df540a94c0c3ba522c5c, type: 3}
 --- !u!1 &1372018481
@@ -1592,7 +1576,7 @@ PrefabInstance:
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
       propertyPath: speed
-      value: 0.1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9130428750089637224, guid: 3022d11ab3a029d4ca7e6c73be236c44,
         type: 3}
